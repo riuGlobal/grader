@@ -1,0 +1,22 @@
+{
+  "name": "grader",
+  "version": "1.0.0",
+  "description": "Tools to grade",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riuGlobal/grader.git"
+  },
+  "keywords": [
+    "grader"
+  ],
+  "author": "Ricardo Ortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riuGlobal/grader/issues"
+  },
+  "homepage": "https://github.com/riuGlobal/grader#readme"
+}
