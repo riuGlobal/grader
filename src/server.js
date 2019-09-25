@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, '../public')))
 
 // routes
 // app.use(authRouter)
-app.use('/api/shopping-cart', cartRouter)
+app.use('/api', cartRouter)
 
 // error handlers
 app.use(logErrors)

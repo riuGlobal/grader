@@ -1,12 +1,12 @@
 import express from 'express'
 
-
+import { test } from './../http/controllers/grader.js'
 const router = express.Router()
 
 /**
  * Frontend endpoints
  */
-// router.get('/:shoppingCartId/validateShoppingCart', firebaseAuth, createCartAlerts)
+router.get('/test', test)
 
 // // Coupons functionality
 // router.get('/retrieveBenefits', firebaseAuth, getBenefits);
