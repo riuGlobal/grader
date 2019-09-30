@@ -1,6 +1,6 @@
 export const test = async (req, res, next) => {
     try {
-      let message = 'Ha ocurrido un error, tu carrito de compras no existe'
+      let message = 'Testing'
       let status = '200'
       let data = {};
 
