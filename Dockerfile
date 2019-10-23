@@ -1,4 +1,4 @@
-FROM node:dubnium-stretch
+FROM node:dubnium-alpine
 WORKDIR /test
 COPY ./ /test
 EXPOSE 8000
