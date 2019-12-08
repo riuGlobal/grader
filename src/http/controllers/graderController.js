@@ -1,3 +1,5 @@
+import { grade as gradeProcess } from '../processes/grade-process'
+
 export const test = async (req, res, next) => {
   try {
     let status = '200'
@@ -18,9 +20,9 @@ export const grade = async (req,res,next) => {
   try {
     
     let status = '200'
-    let data = {};
-    let message = 'Testing'
-   
+    // console.log(req.body)
+    let data = await gradeProcess(req.body);
+    
     res.status(status).send(data)
   
   } catch (err) {
