@@ -4,7 +4,8 @@ import cookieParser from 'cookie-parser'
 import logger from 'morgan'
 import { logErrors, errorHandler, notFound } from './middleware/errorHandler'
 // import authRouter from './routes/auth'
-import cartRouter from './routes/shopping-cart'
+// import cartRouter from './routes/shopping-cart'
+import router from './routes/routes.js'
 // import usersQueue from './http/jobs/registerMsUsersCurrentCart'
 // import benefitsQueue from './http/jobs/redeemBenefitsInUserWallet'
 import cors from 'cors'
@@ -27,7 +28,7 @@ app.use(express.static(path.join(__dirname, '../public')))
 
 // routes
 // app.use(authRouter)
-app.use('/api', cartRouter)
+app.use('/api', router)
 
 // error handlers
 app.use(logErrors)
