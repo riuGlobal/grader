@@ -1,4 +1,5 @@
 import { grade as gradeProcess } from '../processes/grade-process'
+import { validateGradeData } from '../validators/grade-validator'
 
 export const test = async (req, res, next) => {
   try {
@@ -21,6 +22,11 @@ export const grade = async (req,res,next) => {
     
     let status = '200'
     // console.log(req.body)
+    
+    let validationResult = validateGradeData(req.body)
+    if (validationResult.error){
+      res.status(402).send(validationResult.error)  
+    }
     let data = await gradeProcess(req.body);
     
     res.status(status).send(data)
