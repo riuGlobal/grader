@@ -21,7 +21,6 @@ export const grade = async (req,res,next) => {
   try {
     
     let status = '200'
-    // console.log(req.body)
     
     let validationResult = validateGradeData(req.body)
     if (validationResult.error){
